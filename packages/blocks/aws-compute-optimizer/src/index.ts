@@ -4,6 +4,7 @@ import { BlockCategory } from '@openops/shared';
 import { ebsGetRecommendationsAction } from './lib/actions/ebs-get-recommendations-action';
 import { ec2GetRecommendationsAction } from './lib/actions/ec2-get-recommendations-action';
 import { getRecommendationsSummaryAction } from './lib/actions/get-recommendations-summary-action';
+import { rdsGetRecommendationsAction } from './lib/actions/rds-get-recommendations-action';
 
 export const computeOptimizer = createBlock({
   displayName: 'AWS Compute Optimizer',
@@ -16,6 +17,7 @@ export const computeOptimizer = createBlock({
     getRecommendationsSummaryAction,
     ebsGetRecommendationsAction,
     ec2GetRecommendationsAction,
+    rdsGetRecommendationsAction,
   ],
   triggers: [],
 });
